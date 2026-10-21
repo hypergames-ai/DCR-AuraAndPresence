@@ -1,5 +1,8 @@
+# Aura And Presence
+As we become more cybernetic, our deeds will need to become performed more charismatically because in the DCR, attention-chasing on social media escapes to the real world (attention/aura can be "measured" and put on local leaderboards). This is a test to calculate Aura decay into Presence. (Aura is the fire in the fireplace, Presence is the heat from the fireplace stones after fire is extinguished, where the felt heat cue-indexes the memory of the fire)
+
 **Scenario**
-Ten startup pitches to investors, startups are about equally "exciting" to the investors, no standouts. One startup adds myths (origin myth: hyperreal Siren Songs, identity myths: branding, badging, song jingle, etc). This generates extra Aura in the moment, and Presence later on is higher. The goal is to calculate how "sticky" (cue-indexed) this startup is in investors minds. (Aura is the fire in the fireplace, Presence is the heat from the fireplace stones after fire is extinguished). 
+Ten startups pitch to investors, startups are baseline about equally "exciting" to the investors, no standouts. However, one startup charismatically juices up their pitch by presenting myths about themselves and what they are doing (origin myth: hyperreal Siren Songs, identity myths: branding, badging, song jingle, etc). This generates extra Aura in the moment, and residual Presence later on is higher. The goal is to calculate how "sticky" this startup is in investor's minds. (most investors are likely put off by gimmicks, but if done the "right" (DCR) way (think Jimi Hendrix incorporating gimmicks), the gimmicks become a charismatic and seamless part of the product, and the pitch would likely not be shut down mid-flight) 
 
 **Description**
 This is a single-file Swift simulation of a **presence accounting engine** for the DCR framework. It models how an entity (a brand, product, startup, idea, etc.) accumulates, retains, and yields “installed minds” at a given **cue** — a category entry point or occasion where retrieval can happen.
@@ -7,7 +10,7 @@ This is a single-file Swift simulation of a **presence accounting engine** for t
 The header defines a ledger:
 - **Aura flow**: person-attention per tick (the input).
 - **ε (epsilon)**: the transducer’s figure of merit — installations per unit attention. Higher ε + higher tangibility = more effective encoding.
-- **Presence stock** \( P(c) = \sum_i p_i(c) \): effective installed minds at cue \( c \), measured in “cue-minds.”
+- **Presence stock** `P(c) = 𝚺 p(c)`: effective installed minds at cue \( c \), measured in “cue-minds.”
 - **Invocation**: one unprompted retrieval at a live occasion (the yield quantum).
 - **Probe**: a conventional, ex-ante fixing of what counts as an installation (aided vs unaided floors), analogous to a deed quantum. Disputes become empirical probe results rather than metaphysical ones.
 
@@ -22,25 +25,18 @@ The engine is deliberately minimal and Foundation-only, with a deterministic Spl
 - **PresenceEngine**: holds a population of minds, a simple deeds ledger (settlement-layer stub), config (probe + two decay rates), and the RNG.
 ### Dynamics
 **Inflows**
-- `expose`: Aura flow through a crystal transducer. For each mind reached with probability `reach`, applies a saturating update  
-  \[
-  \Delta p = \varepsilon \cdot \text{tangibility} \cdot \text{attention} \cdot (1 - p)
-  \]
-  and takes the max tangibility seen. Private-grade only.
+- `expose`: Aura flow through a crystal transducer. For each mind reached with probability `reach`, applies a saturating update `Δp=ε⋅tangibility⋅attention⋅(1−p)` and takes the max tangibility seen. Private-grade only.
 - `rite`: same saturating update, but also sets `commonKnowledge = true` among participants. This is the settlement-grade channel — “everyone sees everyone seeing.”
 
 **Decay** (`tick`)
-Exponential decay, grade-dependent:  
-\[
-p \leftarrow p \cdot e^{-\lambda \cdot n}
-\]
-where \(\lambda_\text{private}\) is fast (activation-like) and \(\lambda_\text{common}\) is slow (brand-like).
+Exponential decay, grade-dependent:  `p←p⋅e−λ⋅np←p⋅e−λ⋅n`
+where λ(private)​ is fast (activation-like) and λ(common)​ is slow (brand-like).
 
 **Measurement / books**
-- `census`: latent truth only the simulator sees — sum of \( p \) across minds (cue-minds).
+- `census`: latent truth only the simulator sees — sum of _p_ across minds (cue-minds).
 - `grades`: exclusive bands under the probe floors (top-of-mind / unaided / aided).
 - `survey`: administers the probe as an actual recall trial to a sample; returns an unbiased estimate of the census plus 95% CI. Probe and latent ledger agree by construction.
-- `occasions`: runs \( k \) live occasions. Each installed entity comes to mind independently with probability \( p \); the strongest retrieval wins (retrieval rivalry / displacement). Empty set = silent occasion. This is where invocation share is realized.
+- `occasions`: runs _k_ live occasions. Each installed entity comes to mind independently with probability _p_; the strongest retrieval wins (retrieval rivalry / displacement). Empty set = silent occasion. This is where invocation share is realized.
 - `leverage`: presence stock per unit deed-depth. High values = unsecured mythos-credit.
 
 ### Demo
