@@ -1,5 +1,5 @@
 # DCR Aura & Presence
-As we become more cybernetic, our deeds will need to be performed more charismatically because in the DCR, attention-chasing on social media escapes to the real world (real world attention/aura can be "measured" for people & ideas by passive self-opticons/pan-opticons and displayed on leaderboards. The whole point of hypergames, or hyperreality games, is to generate presence for hyperreal constructs on these leaderboards! and obviously, people will selfishly want to get on the leaderboards, too) 
+As we become more cybernetic, our deeds will need to be performed more charismatically because in the DCR, attention-chasing on social media escapes to the real world. Real world attention/aura can be "measured" for people & ideas by passive self-opticons/pan-opticons (who's looking at/talking about whom) and displayed on leaderboards. The whole point of hypergames, or hyperreality games, is to generate presence for hyperreal constructs on these leaderboards! (and obviously, people will selfishly want to get on the leaderboards, too) 
 
 This is a test to calculate Aura decay into Presence. (Aura is the fire in the fireplace, Presence is the heat from the fireplace stones after fire is extinguished, where the felt heat cue-indexes the memory of the fire)
 
