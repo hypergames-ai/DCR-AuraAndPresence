@@ -44,7 +44,30 @@ where λ(private)​ is fast (activation-like) and λ(common)​ is slow (brand-
 - `leverage`: presence stock per unit deed-depth. High values = unsecured mythos-credit.
 
 ### Demo
-The bottom of the file runs a small scenario with 5,000 minds and the cue `"seed-stage: agentic infra"`:
+The Swift file runs a small scenario with 5,000 minds and the cue `"seed-stage: agentic infra"`:
+```
+== t = 0, post-pitch (high tide) ==
+Census (latent Σp, in cue-minds):
+  Hyperreal      1743.7
+  Startup5        354.8
+  Startup2        353.5
+  Startup3        352.9
+Survey, Hyperreal (probe trial, n=400):   1737.5 ± 233.3 cue-minds
+Grades, Hyperreal: top-of-mind 1232 · unaided 0 · aided 3029
+Invocation share (10k occasions): Hyperreal 35.1% · Startup1 3.8% · Startup3 3.6% · silent 34.4%
+Leverage: Hyperreal 871.8  vs  Startup3 39.2
+
+== t = 60, after the silence (low tide) ==
+Census (latent Σp, in cue-minds):
+  Hyperreal       804.1
+  Startup5         79.2
+  Startup2         78.9
+  Startup3         78.7
+Survey, Hyperreal (probe trial, n=400):    800.0 ± 179.6 cue-minds
+Grades, Hyperreal: top-of-mind 1232 · unaided 0 · aided 3029
+Invocation share (10k occasions): Hyperreal 16.5% · Startup4 1.4% · Startup6 1.3% · silent 72.4%
+Leverage: Hyperreal 402.1  vs  Startup3 8.7
+```
 - Nine generic startups and one branded entity (“Hyperreal”) receive identical Aura flow, but Hyperreal has much higher tangibility (0.95 vs 0.25) and also stages a rite (participation 0.25, high ε).
 - One rival quietly records deeds; Hyperreal records almost none.
 - Reports are printed at t = 0 (high tide after the pitch) and after 60 ticks of silence (low tide).
