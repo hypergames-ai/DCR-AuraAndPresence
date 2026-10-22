@@ -33,7 +33,7 @@ The engine is deliberately minimal and Foundation-only, with a deterministic Spl
 - `rite`: same saturating update, but also sets `commonKnowledge = true` among participants. This is the settlement-grade channel — “everyone sees everyone seeing.”
 
 **Decay** (`tick`)
-Exponential decay, grade-dependent:  `p←p⋅e−λ⋅np←p⋅e−λ⋅n`
+Exponential decay, grade-dependent:  `p ← p⋅e^(−λ⋅n)` 
 where λ(private)​ is fast (activation-like) and λ(common)​ is slow (brand-like).
 
 **Measurement / books**
