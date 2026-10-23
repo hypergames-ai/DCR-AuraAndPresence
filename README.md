@@ -6,7 +6,7 @@ This is a test to calculate Aura decay into Presence. (Aura is the fire in the f
 ## Scenario
 Ten startups pitch to investors, all these startups are equally "exciting" to the investors, no standouts. However, one startup charismatically juices up their pitch by presenting myths about themselves and what they are doing (origin myth: hyperreal Siren Songs, identity myths: branding, badging, song jingle, etc). This generates extra Aura in the moment, and extra residual Presence later on. The goal is to calculate how much more "sticky" this startup is in investor's minds compared to the startups focusing on mostly competence without a charismatic juice-up. 
 
-(most investors are likely put off by gimmicks, but if done the "right" DCR way (think: Jimi Hendrix seamlessly incorporating gimmicks), the gimmicks become a charismatic and seamless part of the product, and the pitch would likely not be shut down mid-flight) 
+(Most investors are likely put off by gimmicks, but if done the "right" way (think: Jimi Hendrix seamlessly incorporating gimmicks to his improv on stage), the charismatic gimmicks become a seamless part of the product, adding flavor, and the pitch would likely not be shut down mid-flight) 
 
 ## Description
 This is a single-file Swift simulation of a **presence accounting engine** for the DCR framework. It models how an entity (a brand, product, startup, idea, etc.) accumulates, retains, and yields “installed minds” at a given **cue** — a category entry point or occasion where retrieval can happen.
