@@ -4,7 +4,7 @@ When AI wearables hit their stride, attention-chasing on social media can escape
 This is a test to calculate Aura decay into Presence. (Aura is the fire in the fireplace, Presence is the heat from the fireplace-stones after fire is extinguished, where the felt heat cue-indexes the memory of the fire)
 
 ## Scenario
-Ten startups pitch to investors, all these startups are equally "exciting" to the investors, no standouts. However, one startup charismatically juices up their pitch by presenting myths about themselves and what they are doing (origin myth: hyperreal Siren Songs, identity myths: branding, badging, song jingle, etc). This generates extra Aura in the moment, and extra residual Presence later on. The goal is to calculate how "sticky" this startup is in investor's minds. 
+Ten startups pitch to investors, all these startups are equally "exciting" to the investors, no standouts. However, one startup charismatically juices up their pitch by presenting myths about themselves and what they are doing (origin myth: hyperreal Siren Songs, identity myths: branding, badging, song jingle, etc). This generates extra Aura in the moment, and extra residual Presence later on. The goal is to calculate how much more "sticky" this startup is in investor's minds compared to the startups focusing on mostly competence, little charisma. 
 
 (most investors are likely put off by gimmicks, but if done the "right" DCR way (think: Jimi Hendrix seamlessly incorporating gimmicks), the gimmicks become a charismatic and seamless part of the product, and the pitch would likely not be shut down mid-flight) 
 
