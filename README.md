@@ -1,15 +1,15 @@
 # DCR Aura & Presence
-When AI wearables hit their stride, attention-chasing on social media can escape the screen and spread into the real world. Real world attention/aura can be "measured" for people & brands by passive surveillance by AI wearables, CCTV, etc. (who's looking at/talking about whom) and leaderboards/loserboards shared to become common knowledge. The whole point of hypergames, or hyperreality games, is to generate presence for hyperreal constructs on these leaderboards! (and obviously, people will selfishly want to get _themselves_ on the leaderboards, too: a Bennett-hypergame) Hyperreality contests (sports & games) will be judged by charisma **and** competence, not just competence alone (pro-wrestling is an example of this: drama + prowess; kayfabe = hyperreality simulation).
+When AI wearables hit their stride, attention-chasing on social media can escape the screen and spread into the real world. Real world attention/aura can be "measured" for people & brands by passive surveillance by AI wearables, CCTV, etc. (who's looking at/talking about whom) and leaderboards/loserboards derived from attention heatmaps and syndicated to become common knowledge. The whole point of hypergames, or hyperreality games, is to generate presence for Social Identity (hyperreal) constructs on these leaderboards! (and obviously, people will selfishly want to get _themselves_ personally on the leaderboards, too: a Bennett-hypergame) Hyperreality contests (sports & games) will be judged by charisma **and** competence, not just competence alone (pro-wrestling is an example of this: drama + prowess; kayfabe = hyperreality simulation).
 
 This is a test to calculate Aura decay into Presence. (Aura is the fire in the fireplace, Presence is the heat from the fireplace-stones after fire is extinguished, where the felt heat cue-indexes the memory of the fire)
 
-## Scenario
+## Code Scenario
 Ten startups pitch to investors, all these startups are equally "exciting" to the investors, no standouts. However, one startup charismatically juices up their pitch by presenting myths about themselves and what they are doing (origin myth: hyperreal Siren Songs, identity myths: branding, badging, song jingle, etc). This generates extra Aura in the moment, and extra residual Presence later on. The goal is to calculate how much more "sticky" this startup is in investor's minds compared to the startups focusing on mostly competence without a charismatic juice-up. 
 
-(Most investors are likely put off by gimmicks, but if done the "right" way (think: Jimi Hendrix seamlessly incorporating gimmicks to his improv on stage), the charismatic gimmicks become a seamless part of the product, adding flavor, and the pitch would be less likely to be shut down mid-flight for the gimmicks) 
+Most investors are likely put off by gimmicks, but if done the "right" way (think: Jimi Hendrix seamlessly incorporating gimmicks to his improv on stage), the charismatic gimmicks become a seamless part of the product, adding intensity, and the pitch would be less likely to be shut down mid-flight because of the gimmicks.
 
 ## Description
-This is a single-file Swift simulation of a **presence accounting engine** for the DCR framework. It models how an entity (a brand, product, startup, idea, etc.) accumulates, retains, and yields “installed minds” at a given **cue** — a category entry point or occasion where retrieval can happen.
+This is a single-file Swift simulation of a **presence accounting engine** for the DCR (Digital Consensus Reality) framework. It models how an entity (a brand, product, startup, idea, etc.) accumulates, retains, and yields “installed minds” at a given **cue** — a category entry point or occasion where retrieval can happen.
 ### Units and framing
 The header defines a ledger:
 - **Aura flow**: person-attention per tick (the input).
